@@ -1,0 +1,60 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|d:\\airline-mangament-system\\airline-managament-system-c-\\airlineotomations\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|d:\\airline-mangament-system\\airline-managament-system-c-\\airlineotomations\\splash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|solutionrelative:splash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cs [Tasar\u0131m]",
+              "DocumentMoniker": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Login.cs [Tasar\u0131m]",
+              "RelativeToolTip": "Login.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T10:30:41.592Z",
+              "EditorCaption": " [Tasar\u0131m]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Splash.cs [Tasar\u0131m]",
+              "DocumentMoniker": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Splash.cs",
+              "RelativeDocumentMoniker": "Splash.cs",
+              "ToolTip": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Splash.cs [Tasar\u0131m]",
+              "RelativeToolTip": "Splash.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T09:44:37.933Z",
+              "EditorCaption": " [Tasar\u0131m]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
