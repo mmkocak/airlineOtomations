@@ -98,6 +98,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddPassanger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPassanger.Designer.cs">
+      <DependentUpon>AddPassanger.cs</DependentUpon>
+    </Compile>
     <Compile Include="FlightTbl.cs">
       <SubType>Form</SubType>
     </Compile>
