@@ -104,6 +104,12 @@
     <Compile Include="AddPassanger.Designer.cs">
       <DependentUpon>AddPassanger.cs</DependentUpon>
     </Compile>
+    <Compile Include="CancellationTbl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancellationTbl.Designer.cs">
+      <DependentUpon>CancellationTbl.cs</DependentUpon>
+    </Compile>
     <Compile Include="FlightTbl.cs">
       <SubType>Form</SubType>
     </Compile>

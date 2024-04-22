@@ -294,7 +294,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(222, 27);
             this.label2.TabIndex = 23;
-            this.label2.Text = "Record Rassengers";
+            this.label2.Text = "Record Passengers";
             // 
             // label1
             // 
