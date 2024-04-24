@@ -151,6 +151,9 @@
     <EmbeddedResource Include="AddPassanger.resx">
       <DependentUpon>AddPassanger.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CancellationTbl.resx">
+      <DependentUpon>CancellationTbl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FlightTbl.resx">
       <DependentUpon>FlightTbl.cs</DependentUpon>
     </EmbeddedResource>
