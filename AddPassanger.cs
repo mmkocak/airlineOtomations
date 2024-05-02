@@ -31,10 +31,30 @@ namespace airlineOtomations
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            Con.Open(); 
+            if (passId.Text == "" || passAd.Text == "" || passName.Text == "" || passportTb.Text == "" || phoneTb.Text == "")
+            {
+                MessageBox.Show("Missing İnformation");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string query = "insert into PassengerTbl values("+passId.Text+", "+passName.Text+", "+passportTb.Text+" , "+passAd.Text+" , "+nationalityCb.SelectedItem.ToString()+", "+genderCb.SelectedItem.ToString()+", "+phoneTb.Text+")";
+                    SqlCommand cmd = new SqlCommand(query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Passenger Recorded Succesful");
+                    Con.Close();
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
 
-            Con.Close();
+                
+            }
         }
+
+
     }
 }

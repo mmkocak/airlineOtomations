@@ -127,18 +127,6 @@
         ACjGuAFBJy3fM5b6pQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="PassId.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <data name="PassId.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAARAAAAAfCAYAAAAvK5J0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACeSURBVHhe7dSxCQMxAARB9V+VHpXhMlyAH4ESZ+91OgOX
-        XAE7AP6y1nrNOT9mZk+2m3HyMcY+AJ7azTj5EBDgNwICZAICZAICZAICZAICZAICZAICZAICZAICZAIC
-        ZAICZAICZAICZAICZAICZAICZAICZAICZAICZAICZAICZAICZAICZAICZAICZF8Bua7rvQ8zsyfbzTj5
-        ACjGuAFBJy3fM5b6pQAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="passportTb.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAARAAAAAfCAYAAAAvK5J0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -158,6 +146,15 @@
 </value>
   </data>
   <data name="phoneTb.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAARAAAAAfCAYAAAAvK5J0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACeSURBVHhe7dSxCQMxAARB9V+VHpXhMlyAH4ESZ+91OgOX
+        XAE7AP6y1nrNOT9mZk+2m3HyMcY+AJ7azTj5EBDgNwICZAICZAICZAICZAICZAICZAICZAICZAICZAIC
+        ZAICZAICZAICZAICZAICZAICZAICZAICZAICZAICZAICZAICZAICZAICZAICZF8Bua7rvQ8zsyfbzTj5
+        ACjGuAFBJy3fM5b6pQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="passId.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAARAAAAAfCAYAAAAvK5J0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACeSURBVHhe7dSxCQMxAARB9V+VHpXhMlyAH4ESZ+91OgOX
