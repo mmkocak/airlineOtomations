@@ -138,6 +138,15 @@
             // 
             this.NatCb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.NatCb.FormattingEnabled = true;
+            this.NatCb.Items.AddRange(new object[] {
+            "Turkish",
+            "Azerbaijani",
+            "Turkoman",
+            "Hungarian",
+            "Palestinian",
+            "Kirghiz",
+            "Uzbek",
+            "Kazakhstani"});
             this.NatCb.Location = new System.Drawing.Point(270, 229);
             this.NatCb.Name = "NatCb";
             this.NatCb.Size = new System.Drawing.Size(272, 31);
@@ -147,6 +156,9 @@
             // 
             this.GendCb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.GendCb.FormattingEnabled = true;
+            this.GendCb.Items.AddRange(new object[] {
+            "MALE",
+            "FEMALE"});
             this.GendCb.Location = new System.Drawing.Point(890, 229);
             this.GendCb.Name = "GendCb";
             this.GendCb.Size = new System.Drawing.Size(272, 31);
@@ -217,6 +229,7 @@
             this.button2.TabIndex = 53;
             this.button2.Text = "Reset";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -231,6 +244,7 @@
             this.button1.TabIndex = 52;
             this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel3
             // 
@@ -267,7 +281,7 @@
             this.passengerDGV.RowTemplate.Height = 24;
             this.passengerDGV.Size = new System.Drawing.Size(1135, 305);
             this.passengerDGV.TabIndex = 60;
-            this.passengerDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.passengerDGV_CellContentClick);
+            this.passengerDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.passengerDGV_RowHeaderMouseClick);
             // 
             // PidTb
             // 
