@@ -69,5 +69,12 @@ namespace airlineOtomations
             SeatNum.Text = "";
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ViewFlights viewFlights = new ViewFlights();
+            viewFlights.Show();
+            this.Hide();
+        }
     }
 }

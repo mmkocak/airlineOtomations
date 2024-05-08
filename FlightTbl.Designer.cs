@@ -111,9 +111,9 @@
             this.label6.ForeColor = System.Drawing.Color.DimGray;
             this.label6.Location = new System.Drawing.Point(825, 182);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 23);
+            this.label6.Size = new System.Drawing.Size(118, 23);
             this.label6.TabIndex = 14;
-            this.label6.Text = "Source";
+            this.label6.Text = "Destination";
             // 
             // Fsrc
             // 
@@ -138,14 +138,13 @@
             this.FDest.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FDest.FormattingEnabled = true;
             this.FDest.Items.AddRange(new object[] {
-            "İstanbul",
-            "Bakü",
-            "Ankara",
-            "Astana",
-            "Lefkoşa",
-            "Şam",
-            "Erbil",
-            "Tebriz"});
+            "İzmir",
+            "Bursa",
+            "Van",
+            "Kırım",
+            "Roma",
+            "Kahire",
+            "Tokyo"});
             this.FDest.Location = new System.Drawing.Point(969, 174);
             this.FDest.Name = "FDest";
             this.FDest.Size = new System.Drawing.Size(272, 31);
@@ -244,6 +243,7 @@
             this.button1.TabIndex = 47;
             this.button1.Text = "View";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FlightTbl
             // 

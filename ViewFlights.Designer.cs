@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewFlights));
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.FDate = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.FDest = new System.Windows.Forms.ComboBox();
+            this.Fsrc = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,6 +48,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.flightDGV = new System.Windows.Forms.DataGridView();
+            this.Fcode = new System.Windows.Forms.TextBox();
+            this.SeatNum = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flightDGV)).BeginInit();
             this.SuspendLayout();
@@ -74,12 +76,12 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Faruk Airline";
             // 
-            // dateTimePicker1
+            // FDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(208, 203);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 31;
+            this.FDate.Location = new System.Drawing.Point(208, 203);
+            this.FDate.Name = "FDate";
+            this.FDate.Size = new System.Drawing.Size(200, 22);
+            this.FDate.TabIndex = 31;
             // 
             // label7
             // 
@@ -92,23 +94,40 @@
             this.label7.TabIndex = 30;
             this.label7.Text = "TakeOfDate";
             // 
-            // comboBox2
+            // FDest
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(929, 202);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(272, 31);
-            this.comboBox2.TabIndex = 29;
+            this.FDest.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.FDest.FormattingEnabled = true;
+            this.FDest.Items.AddRange(new object[] {
+            "İzmir",
+            "Bursa",
+            "Van",
+            "Kırım",
+            "Roma",
+            "Kahire",
+            "Tokyo"});
+            this.FDest.Location = new System.Drawing.Point(929, 202);
+            this.FDest.Name = "FDest";
+            this.FDest.Size = new System.Drawing.Size(272, 31);
+            this.FDest.TabIndex = 29;
             // 
-            // comboBox1
+            // Fsrc
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(929, 146);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(272, 31);
-            this.comboBox1.TabIndex = 28;
+            this.Fsrc.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Fsrc.FormattingEnabled = true;
+            this.Fsrc.Items.AddRange(new object[] {
+            "İstanbul",
+            "Bakü",
+            "Ankara",
+            "Astana",
+            "Lefkoşa",
+            "Şam",
+            "Erbil",
+            "Tebriz"});
+            this.Fsrc.Location = new System.Drawing.Point(933, 146);
+            this.Fsrc.Name = "Fsrc";
+            this.Fsrc.Size = new System.Drawing.Size(272, 31);
+            this.Fsrc.TabIndex = 28;
             // 
             // label6
             // 
@@ -167,6 +186,7 @@
             this.button2.TabIndex = 34;
             this.button2.Text = "Reset";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -181,6 +201,7 @@
             this.button1.TabIndex = 33;
             this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
@@ -195,6 +216,7 @@
             this.button3.TabIndex = 35;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -209,6 +231,7 @@
             this.button4.TabIndex = 36;
             this.button4.Text = "Back";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox1
             // 
@@ -255,12 +278,29 @@
             this.flightDGV.RowTemplate.Height = 24;
             this.flightDGV.Size = new System.Drawing.Size(1135, 305);
             this.flightDGV.TabIndex = 61;
+            this.flightDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.flightDGV_CellContentClick);
+            // 
+            // Fcode
+            // 
+            this.Fcode.Location = new System.Drawing.Point(208, 146);
+            this.Fcode.Name = "Fcode";
+            this.Fcode.Size = new System.Drawing.Size(200, 22);
+            this.Fcode.TabIndex = 62;
+            // 
+            // SeatNum
+            // 
+            this.SeatNum.Location = new System.Drawing.Point(208, 257);
+            this.SeatNum.Name = "SeatNum";
+            this.SeatNum.Size = new System.Drawing.Size(200, 22);
+            this.SeatNum.TabIndex = 63;
             // 
             // ViewFlights
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1274, 761);
+            this.Controls.Add(this.SeatNum);
+            this.Controls.Add(this.Fcode);
             this.Controls.Add(this.flightDGV);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -270,10 +310,10 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.FDate);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.FDest);
+            this.Controls.Add(this.Fsrc);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -296,10 +336,10 @@
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker FDate;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox FDest;
+        private System.Windows.Forms.ComboBox Fsrc;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -313,5 +353,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView flightDGV;
+        private System.Windows.Forms.TextBox Fcode;
+        private System.Windows.Forms.TextBox SeatNum;
     }
 }
