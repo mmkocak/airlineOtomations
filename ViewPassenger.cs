@@ -86,6 +86,7 @@ namespace airlineOtomations
                 PnameTb.Text = row.Cells["PassName"].Value.ToString();
                 PpassTb.Text = row.Cells["Passport"].Value.ToString();
                 PaddTb.Text = row.Cells["PassAd"].Value.ToString();
+                PphoneTb.Text = row.Cells["PassPhone"].Value.ToString();
                 NatCb.SelectedItem = row.Cells["PassNat"].Value.ToString();
                 GendCb.SelectedItem = row.Cells["PassGend"].Value.ToString();
             }
@@ -136,11 +137,11 @@ namespace airlineOtomations
                     MessageBox.Show("Passenger Updated Successfully");
                     Con.Close();
                     populate();
-                }
-                catch(Exception Ex)
+                }catch(Exception Ex)
                 {
                     MessageBox.Show("Missing İnformation");
                 }
+                
             }
         }
     }
