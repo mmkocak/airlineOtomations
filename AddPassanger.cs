@@ -18,7 +18,8 @@ namespace airlineOtomations
         {
             InitializeComponent();
         }
-        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\database\Airline.db.mdf;Integrated Security=True;Connect Timeout=30;Encrypt=True");
+        string con = "Server=DESKTOP-I3I4IR2\\SQLEXPRESS; Database=AirlinesDb; Trusted_Connection=True;";
+
         private void AddPassanger_Load(object sender, EventArgs e)
         {
 
@@ -31,30 +32,59 @@ namespace airlineOtomations
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (passId.Text == "" || passAd.Text == "" || passName.Text == "" || passportTb.Text == "" || phoneTb.Text == "")
+            string passid = passId.Text;
+            string passname = passName.Text;
+            string passport = passportTb.Text;
+            string passad = passAd.Text;
+            string phonetb = phoneTb.Text;
+            if (passid == "" || passad == "" || passname == "" || passport == "" || phonetb == "")
             {
                 MessageBox.Show("Missing İnformation");
             }
             else
             {
-                try
+                using (SqlConnection conn = new SqlConnection(con))
                 {
-                    Con.Open();
-                    string query = "insert into PassengerTbl values("+passId.Text+", "+passName.Text+", "+passportTb.Text+" , "+passAd.Text+" , "+nationalityCb.SelectedItem.ToString()+", "+genderCb.SelectedItem.ToString()+", "+phoneTb.Text+")";
-                    SqlCommand cmd = new SqlCommand(query, Con);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Passenger Recorded Succesful");
-                    Con.Close();
-                }
-                catch(Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
 
-                
+
+                    try
+                    {
+                        conn.Open();
+                        // Veri tabanını bağladık
+                        string query = "INSERT INTO PassengerTbl (PassId,PassName, Passport, PassAd,PassNat, PassGend, PassPhone )" +
+                                " VALUES( @passId,@passname, @passport ,@passad , @passnat , @passgend, @phonetb)";
+                        SqlCommand cmd = new SqlCommand(query, conn);
+                        cmd.Parameters.AddWithValue("@passId", passid);
+                        cmd.Parameters.AddWithValue("@passname", passname);
+                        cmd.Parameters.AddWithValue("@passport", passport);
+                        cmd.Parameters.AddWithValue("@passad", passad);
+                        cmd.Parameters.AddWithValue("@passnat", nationalityCb.SelectedItem.ToString());
+                        cmd.Parameters.AddWithValue("@passgend", genderCb.SelectedItem.ToString());
+                        cmd.Parameters.AddWithValue("@phonetb", phonetb);
+
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Passenger Recorded Succesful");
+                        conn.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
+
+                }
             }
+
+
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ViewPassenger viewPass = new ViewPassenger();
+            viewPass.Show();
+            this.Hide();
 
+
+        }
     }
 }

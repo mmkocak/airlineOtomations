@@ -1,10 +1,6 @@
 D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\bin\Debug\airlineOtomations.exe.config
 D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\bin\Debug\airlineOtomations.exe
 D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\bin\Debug\airlineOtomations.pdb
-D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\bin\Debug\Bunifu.Licensing.dll
-D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\bin\Debug\Bunifu.UI.WinForms.dll
-D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\bin\Debug\Bunifu.Utils.dll
-D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\bin\Debug\Guna.UI2.dll
 D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\bin\Debug\Newtonsoft.Json.dll
 D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\bin\Debug\RestSharp.dll
@@ -17,7 +13,6 @@ D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\bin\D
 D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\bin\Debug\System.Text.Json.dll
 D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\bin\Debug\System.Threading.Tasks.Extensions.dll
 D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\bin\Debug\System.ValueTuple.dll
-D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\bin\Debug\Bunifu.UI.WinForms.xml
 D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\bin\Debug\Newtonsoft.Json.xml
 D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\bin\Debug\RestSharp.xml

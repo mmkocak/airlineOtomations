@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Splash));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.Myprogress = new Guna.UI2.WinForms.Guna2ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,15 +54,7 @@
             this.label1.Size = new System.Drawing.Size(149, 27);
             this.label1.TabIndex = 1;
             this.label1.Text = "Faruk Airline";
-            // 
-            // Myprogress
-            // 
-            this.Myprogress.Location = new System.Drawing.Point(-4, 434);
-            this.Myprogress.Name = "Myprogress";
-            this.Myprogress.Size = new System.Drawing.Size(832, 16);
-            this.Myprogress.TabIndex = 2;
-            this.Myprogress.Text = "guna2ProgressBar1";
-            this.Myprogress.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            
             // 
             // Splash
             // 
@@ -71,7 +62,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(828, 450);
-            this.Controls.Add(this.Myprogress);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -88,7 +78,6 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2ProgressBar Myprogress;
     }
 }
 
