@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewFlights));
-            
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -51,7 +47,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.flightDGV = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flightDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -133,7 +131,6 @@
             this.label5.Size = new System.Drawing.Size(77, 23);
             this.label5.TabIndex = 26;
             this.label5.Text = "Source";
-          
             // 
             // label4
             // 
@@ -145,7 +142,6 @@
             this.label4.Size = new System.Drawing.Size(138, 23);
             this.label4.TabIndex = 24;
             this.label4.Text = "Num of Seats";
-           
             // 
             // label3
             // 
@@ -157,7 +153,6 @@
             this.label3.Size = new System.Drawing.Size(122, 23);
             this.label3.TabIndex = 22;
             this.label3.Text = "Flight Code";
-          
             // 
             // button2
             // 
@@ -249,11 +244,24 @@
             this.panel3.Size = new System.Drawing.Size(75, 305);
             this.panel3.TabIndex = 40;
             // 
+            // flightDGV
+            // 
+            this.flightDGV.BackgroundColor = System.Drawing.Color.White;
+            this.flightDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.flightDGV.GridColor = System.Drawing.Color.Maroon;
+            this.flightDGV.Location = new System.Drawing.Point(70, 407);
+            this.flightDGV.Name = "flightDGV";
+            this.flightDGV.RowHeadersWidth = 51;
+            this.flightDGV.RowTemplate.Height = 24;
+            this.flightDGV.Size = new System.Drawing.Size(1135, 305);
+            this.flightDGV.TabIndex = 61;
+            // 
             // ViewFlights
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1274, 761);
+            this.Controls.Add(this.flightDGV);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -276,7 +284,9 @@
             this.Name = "ViewFlights";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewFlights";
+            this.Load += new System.EventHandler(this.ViewFlights_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flightDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -302,5 +312,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DataGridView flightDGV;
     }
 }
