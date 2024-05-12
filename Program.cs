@@ -16,7 +16,7 @@ namespace airlineOtomations
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ViewFlights());
+            Application.Run(new Ticket());
         }
     }
 }
