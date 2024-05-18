@@ -8,13 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Runtime.CompilerServices;
 
 namespace airlineOtomations
 {
     public partial class Ticket : Form
     {
         string con = "Server=DESKTOP-I3I4IR2\\SQLEXPRESS; Database=AirlinesDb; Trusted_Connection=True;";
-       
+        
         private void fillPassenger()
         {
             SqlConnection Con = new SqlConnection(con);
@@ -33,37 +34,54 @@ namespace airlineOtomations
         public Ticket()
         {
             InitializeComponent();
+           
         }
 
         private void Ticket_Load(object sender, EventArgs e)
         {
             fillPassenger();
+            
         }
+        string pname, ppass, pnat, pgend;
+       
         private void fetchPassenger()
         {
-            string passId = PICb.SelectedValue.ToString();
-            SqlConnection Con = new SqlConnection(con);
-            
-            Con.Open();
-            String query = "SELECT * FROM PassengerTbl where PassId = @PassId";
-            SqlCommand cmd = new SqlCommand(query, Con);
-            DataTable dt = new DataTable();
-            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-            adapter.Fill(dt);
-            cmd.Parameters.AddWithValue("@PassId", passId);
-            foreach (DataRow dr in dt.Rows)
-            {
 
+            string passId = PICb.SelectedValue.ToString();
+           
+
+            using (SqlConnection Con = new SqlConnection(con))
+            {
+                Con.Open();
+                string query = "SELECT * FROM PassengerTbl WHERE PassId = @PassId";
+
+                using (SqlCommand cmd = new SqlCommand(query, Con))
+                {
+                    cmd.Parameters.AddWithValue("@PassId", passId);
+
+                    DataTable dt = new DataTable();
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                    {
+                        adapter.Fill(dt);
+                    }
+
+                    foreach (DataRow dr in dt.Rows)
+                    {
+                        pname = dr["PassName"].ToString();
+                        ppass = dr["Passport"].ToString();
+                        pnat = dr["PassNat"].ToString();
+                        pgend = dr["PassGend"].ToString();
+                       PnameTb.Text = pname;
+                        PPassTb.Text = ppass;
+                        PNatTb.Text = pnat;
+                    }
+                }
             }
-            Con.Close();
 
         }
         private void PICb_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            SqlConnection Con = new SqlConnection(con);
-            Con.Open();
-
-            Con.Close();
+            fetchPassenger();
         }
     }
 }

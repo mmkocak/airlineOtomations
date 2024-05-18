@@ -139,7 +139,7 @@ namespace airlineOtomations
                     populate();
                 }catch(Exception Ex)
                 {
-                    MessageBox.Show("Missing İnformation");
+                    MessageBox.Show(Ex.Message);
                 }
                 
             }
