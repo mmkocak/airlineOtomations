@@ -110,6 +110,8 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\FetchPassenger.cs" />
+    <Compile Include="Models\fillPassenger.cs" />
     <Compile Include="Splash.cs">
       <SubType>Form</SubType>
     </Compile>
