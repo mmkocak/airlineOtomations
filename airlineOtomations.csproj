@@ -111,7 +111,9 @@
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\FetchPassenger.cs" />
+    <Compile Include="Models\FillFlightCode.cs" />
     <Compile Include="Models\fillPassenger.cs" />
+    <Compile Include="Models\SelectPopulate.cs" />
     <Compile Include="Splash.cs">
       <SubType>Form</SubType>
     </Compile>

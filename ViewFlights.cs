@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Text.RegularExpressions;
+using airlineOtomations.Models;
 
 
 namespace airlineOtomations
@@ -21,6 +22,7 @@ namespace airlineOtomations
         }
         SqlConnection Con = new SqlConnection("Server=DESKTOP-I3I4IR2\\SQLEXPRESS; Database=AirlinesDb; Trusted_Connection=True;");
 
+        
         private void populate()
         {
             Con.Open();
@@ -30,13 +32,13 @@ namespace airlineOtomations
             var ds = new DataSet();
             adapter.Fill(ds);
             flightDGV.DataSource = ds.Tables[0];
-
             Con.Close();
         }
 
         private void ViewFlights_Load(object sender, EventArgs e)
         {
             populate();
+
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -135,5 +137,10 @@ string query = "UPDATE FlightsTbl set Fsrc = @fsrc, FDest = @fdest, FDate = @fda
         
     
 }
+
+        private void Fsrc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

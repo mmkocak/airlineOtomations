@@ -49,11 +49,11 @@
             this.PNatTb = new System.Windows.Forms.TextBox();
             this.PAmtTb = new System.Windows.Forms.TextBox();
             this.PPassTb = new System.Windows.Forms.TextBox();
-            this.flightDGV = new System.Windows.Forms.DataGridView();
+            this.TicketDGV = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.flightDGV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TicketDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -121,6 +121,7 @@
             this.FCode.Name = "FCode";
             this.FCode.Size = new System.Drawing.Size(272, 31);
             this.FCode.TabIndex = 53;
+            this.FCode.SelectedIndexChanged += new System.EventHandler(this.FCode_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -272,18 +273,18 @@
             this.PPassTb.TabIndex = 74;
             this.PPassTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // flightDGV
+            // TicketDGV
             // 
-            this.flightDGV.BackgroundColor = System.Drawing.Color.White;
-            this.flightDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.flightDGV.GridColor = System.Drawing.Color.Maroon;
-            this.flightDGV.Location = new System.Drawing.Point(69, 417);
-            this.flightDGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.flightDGV.Name = "flightDGV";
-            this.flightDGV.RowHeadersWidth = 51;
-            this.flightDGV.RowTemplate.Height = 24;
-            this.flightDGV.Size = new System.Drawing.Size(1409, 319);
-            this.flightDGV.TabIndex = 75;
+            this.TicketDGV.BackgroundColor = System.Drawing.Color.White;
+            this.TicketDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TicketDGV.GridColor = System.Drawing.Color.Maroon;
+            this.TicketDGV.Location = new System.Drawing.Point(69, 417);
+            this.TicketDGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TicketDGV.Name = "TicketDGV";
+            this.TicketDGV.RowHeadersWidth = 51;
+            this.TicketDGV.RowTemplate.Height = 24;
+            this.TicketDGV.Size = new System.Drawing.Size(1409, 319);
+            this.TicketDGV.TabIndex = 75;
             // 
             // button4
             // 
@@ -314,6 +315,7 @@
             this.button3.TabIndex = 77;
             this.button3.Text = "Reset";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
@@ -329,6 +331,7 @@
             this.button1.TabIndex = 76;
             this.button1.Text = "Book";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Ticket
             // 
@@ -338,7 +341,7 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.flightDGV);
+            this.Controls.Add(this.TicketDGV);
             this.Controls.Add(this.PPassTb);
             this.Controls.Add(this.PAmtTb);
             this.Controls.Add(this.PNatTb);
@@ -366,7 +369,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ticket";
             this.Load += new System.EventHandler(this.Ticket_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.flightDGV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TicketDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -395,7 +398,7 @@
         private System.Windows.Forms.TextBox PNatTb;
         private System.Windows.Forms.TextBox PAmtTb;
         private System.Windows.Forms.TextBox PPassTb;
-        private System.Windows.Forms.DataGridView flightDGV;
+        private System.Windows.Forms.DataGridView TicketDGV;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;

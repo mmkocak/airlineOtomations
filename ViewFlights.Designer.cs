@@ -128,6 +128,7 @@
             this.Fsrc.Name = "Fsrc";
             this.Fsrc.Size = new System.Drawing.Size(272, 31);
             this.Fsrc.TabIndex = 28;
+            this.Fsrc.SelectedIndexChanged += new System.EventHandler(this.Fsrc_SelectedIndexChanged);
             // 
             // label6
             // 
