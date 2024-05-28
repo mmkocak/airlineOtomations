@@ -40,14 +40,14 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.TicketDGV = new System.Windows.Forms.DataGridView();
+            this.CancellDGV = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.FcodeTb = new System.Windows.Forms.TextBox();
             this.CancDate = new System.Windows.Forms.DateTimePicker();
-            ((System.ComponentModel.ISupportInitialize)(this.TicketDGV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CancellDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // label9
@@ -110,7 +110,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.DarkRed;
-            this.label2.Location = new System.Drawing.Point(646, 49);
+            this.label2.Location = new System.Drawing.Point(701, 49);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(230, 27);
             this.label2.TabIndex = 70;
@@ -121,7 +121,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.DarkRed;
-            this.label1.Location = new System.Drawing.Point(680, 9);
+            this.label1.Location = new System.Drawing.Point(735, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 27);
             this.label1.TabIndex = 69;
@@ -135,6 +135,7 @@
             this.TidCb.Name = "TidCb";
             this.TidCb.Size = new System.Drawing.Size(272, 31);
             this.TidCb.TabIndex = 93;
+            this.TidCb.SelectionChangeCommitted += new System.EventHandler(this.TidCb_SelectionChangeCommitted);
             // 
             // CanId
             // 
@@ -188,18 +189,18 @@
             this.button1.Text = "Cancel";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // TicketDGV
+            // CancellDGV
             // 
-            this.TicketDGV.BackgroundColor = System.Drawing.Color.White;
-            this.TicketDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TicketDGV.GridColor = System.Drawing.Color.Maroon;
-            this.TicketDGV.Location = new System.Drawing.Point(59, 367);
-            this.TicketDGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.TicketDGV.Name = "TicketDGV";
-            this.TicketDGV.RowHeadersWidth = 51;
-            this.TicketDGV.RowTemplate.Height = 24;
-            this.TicketDGV.Size = new System.Drawing.Size(1409, 319);
-            this.TicketDGV.TabIndex = 100;
+            this.CancellDGV.BackgroundColor = System.Drawing.Color.White;
+            this.CancellDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CancellDGV.GridColor = System.Drawing.Color.Maroon;
+            this.CancellDGV.Location = new System.Drawing.Point(59, 367);
+            this.CancellDGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CancellDGV.Name = "CancellDGV";
+            this.CancellDGV.RowHeadersWidth = 51;
+            this.CancellDGV.RowTemplate.Height = 24;
+            this.CancellDGV.Size = new System.Drawing.Size(1409, 319);
+            this.CancellDGV.TabIndex = 100;
             // 
             // panel3
             // 
@@ -222,10 +223,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkRed;
-            this.panel1.Location = new System.Drawing.Point(-10, 367);
+            this.panel1.Location = new System.Drawing.Point(-2, 367);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(69, 402);
+            this.panel1.Size = new System.Drawing.Size(61, 402);
             this.panel1.TabIndex = 97;
             // 
             // label5
@@ -233,7 +234,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.Color.DarkRed;
-            this.label5.Location = new System.Drawing.Point(646, 310);
+            this.label5.Location = new System.Drawing.Point(701, 319);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(197, 27);
             this.label5.TabIndex = 104;
@@ -241,10 +242,12 @@
             // 
             // FcodeTb
             // 
+            this.FcodeTb.Enabled = false;
             this.FcodeTb.Location = new System.Drawing.Point(289, 210);
             this.FcodeTb.Name = "FcodeTb";
             this.FcodeTb.Size = new System.Drawing.Size(272, 22);
             this.FcodeTb.TabIndex = 105;
+            this.FcodeTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // CancDate
             // 
@@ -264,7 +267,7 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.TicketDGV);
+            this.Controls.Add(this.CancellDGV);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -282,7 +285,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CancellationTbl";
             this.Load += new System.EventHandler(this.CancellationTbl_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.TicketDGV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CancellDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -303,7 +306,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView TicketDGV;
+        private System.Windows.Forms.DataGridView CancellDGV;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
