@@ -158,6 +158,7 @@
             this.button4.TabIndex = 103;
             this.button4.Text = "Back";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -173,6 +174,7 @@
             this.button3.TabIndex = 102;
             this.button3.Text = "Clear";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
@@ -188,9 +190,11 @@
             this.button1.TabIndex = 101;
             this.button1.Text = "Cancel";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // CancellDGV
             // 
+            this.CancellDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.CancellDGV.BackgroundColor = System.Drawing.Color.White;
             this.CancellDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.CancellDGV.GridColor = System.Drawing.Color.Maroon;

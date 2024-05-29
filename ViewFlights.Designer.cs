@@ -270,6 +270,7 @@
             // 
             // flightDGV
             // 
+            this.flightDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.flightDGV.BackgroundColor = System.Drawing.Color.White;
             this.flightDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.flightDGV.GridColor = System.Drawing.Color.Maroon;
