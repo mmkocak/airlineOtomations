@@ -40,3 +40,4 @@ D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\obj\D
 D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\obj\Debug\airlineO.4CBE3908.Up2Date
 D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\obj\Debug\airlineOtomations.exe
 D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\obj\Debug\airlineOtomations.pdb
+D:\airline-mangament-system\airline-managament-system-c-\airlineOtomations\obj\Debug\airlineOtomations.Home.resources

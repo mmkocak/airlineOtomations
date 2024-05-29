@@ -118,6 +118,9 @@
     </Compile>
     <Compile Include="Models\Cancellation\fetchCodeCan.cs" />
     <Compile Include="Models\Cancellation\FillTicketCodeCan.cs" />
+    <Compile Include="Models\CustomButtons.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Models\FetchPassenger.cs" />
     <Compile Include="Models\FillFlightCode.cs" />
     <Compile Include="Models\fillPassenger.cs" />
@@ -157,6 +160,9 @@
     <EmbeddedResource Include="FlightTbl.resx">
       <DependentUpon>FlightTbl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +177,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Ticket.resx">
       <DependentUpon>Ticket.cs</DependentUpon>
@@ -194,6 +201,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ucakk.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

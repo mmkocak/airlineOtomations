@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|d:\\airline-mangament-system\\airline-managament-system-c-\\airlineotomations\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|solutionrelative:home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|solutionrelative:home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\home.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|solutionrelative:home.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|d:\\airline-mangament-system\\airline-managament-system-c-\\airlineotomations\\models\\custombuttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|solutionrelative:models\\custombuttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\viewflights.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|solutionrelative:viewflights.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\splash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|solutionrelative:splash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -19,11 +47,7 @@
       "RelativeMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|solutionrelative:viewflights.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\viewflights.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|solutionrelative:viewflights.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|d:\\airline-mangament-system\\airline-managament-system-c-\\airlineotomations\\cancellationtbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\cancellationtbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|solutionrelative:cancellationtbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -47,16 +71,8 @@
       "RelativeMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|solutionrelative:models\\fetchpassenger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\flighttbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|solutionrelative:flighttbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FDAC474A-9F7C-4AC1-8D5E-4B5B1B235E20}|airlineOtomations.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,7 +98,58 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomButtons.cs",
+              "DocumentMoniker": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Models\\CustomButtons.cs",
+              "RelativeDocumentMoniker": "Models\\CustomButtons.cs",
+              "ToolTip": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Models\\CustomButtons.cs",
+              "RelativeToolTip": "Models\\CustomButtons.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T20:27:01.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Home.cs",
+              "DocumentMoniker": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Home.cs",
+              "RelativeDocumentMoniker": "Home.cs",
+              "ToolTip": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Home.cs",
+              "RelativeToolTip": "Home.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAcwCsAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T20:22:33.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.Designer.cs",
+              "DocumentMoniker": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Home.Designer.cs",
+              "RelativeDocumentMoniker": "Home.Designer.cs",
+              "ToolTip": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Home.Designer.cs",
+              "RelativeToolTip": "Home.Designer.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAmwJYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T20:22:06.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Splash.cs [Tasar\u0131m]",
+              "DocumentMoniker": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Splash.cs",
+              "RelativeDocumentMoniker": "Splash.cs",
+              "ToolTip": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Splash.cs [Tasar\u0131m]",
+              "RelativeToolTip": "Splash.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T20:08:15.232Z",
+              "EditorCaption": " [Tasar\u0131m]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Home.cs [Tasar\u0131m]",
               "DocumentMoniker": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Home.cs",
               "RelativeDocumentMoniker": "Home.cs",
@@ -91,18 +158,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-29T19:57:06.018Z",
               "EditorCaption": " [Tasar\u0131m]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T17:14:42.61Z"
             },
             {
               "$type": "Document",
@@ -118,7 +173,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T17:14:42.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ViewFlights.cs",
               "DocumentMoniker": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\ViewFlights.cs",
               "RelativeDocumentMoniker": "ViewFlights.cs",
@@ -131,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "fetchCodeCan.cs",
               "DocumentMoniker": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Models\\Cancellation\\fetchCodeCan.cs",
               "RelativeDocumentMoniker": "Models\\Cancellation\\fetchCodeCan.cs",
@@ -139,11 +207,12 @@
               "RelativeToolTip": "Models\\Cancellation\\fetchCodeCan.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T13:37:16.65Z"
+              "WhenOpened": "2024-05-28T13:37:16.65Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "SelectPopulate.cs",
               "DocumentMoniker": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Models\\SelectPopulate.cs",
               "RelativeDocumentMoniker": "Models\\SelectPopulate.cs",
@@ -156,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "CancellationTbl.cs",
               "DocumentMoniker": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\CancellationTbl.cs",
               "RelativeDocumentMoniker": "CancellationTbl.cs",
@@ -169,7 +238,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
+              "Title": "Login.cs [Tasar\u0131m]",
+              "DocumentMoniker": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Login.cs [Tasar\u0131m]",
+              "RelativeToolTip": "Login.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T10:21:42.812Z",
+              "EditorCaption": " [Tasar\u0131m]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Ticket.cs [Tasar\u0131m]",
               "DocumentMoniker": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Ticket.cs",
               "RelativeDocumentMoniker": "Ticket.cs",
@@ -181,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "CancellationTbl.cs [Tasar\u0131m]",
               "DocumentMoniker": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\CancellationTbl.cs",
               "RelativeDocumentMoniker": "CancellationTbl.cs",
@@ -193,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "Ticket.cs",
               "DocumentMoniker": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Ticket.cs",
               "RelativeDocumentMoniker": "Ticket.cs",
@@ -206,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "FillTicketCodeCan.cs",
               "DocumentMoniker": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Models\\Cancellation\\FillTicketCodeCan.cs",
               "RelativeDocumentMoniker": "Models\\Cancellation\\FillTicketCodeCan.cs",
@@ -214,11 +295,12 @@
               "RelativeToolTip": "Models\\Cancellation\\FillTicketCodeCan.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T13:15:36.956Z"
+              "WhenOpened": "2024-05-28T13:15:36.956Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "FetchPassenger.cs",
               "DocumentMoniker": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Models\\FetchPassenger.cs",
               "RelativeDocumentMoniker": "Models\\FetchPassenger.cs",
@@ -226,29 +308,20 @@
               "RelativeToolTip": "Models\\FetchPassenger.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T13:37:29.675Z"
+              "WhenOpened": "2024-05-28T13:37:29.675Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "FlightTbl.cs [Tasar\u0131m]",
               "DocumentMoniker": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\FlightTbl.cs",
               "RelativeDocumentMoniker": "FlightTbl.cs",
               "ToolTip": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\FlightTbl.cs [Tasar\u0131m]",
               "RelativeToolTip": "FlightTbl.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T17:51:31.439Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Login.cs [Tasar\u0131m]",
-              "DocumentMoniker": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Login.cs",
-              "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "D:\\airline-mangament-system\\airline-managament-system-c-\\airlineOtomations\\Login.cs [Tasar\u0131m]",
-              "RelativeToolTip": "Login.cs [Tasar\u0131m]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T10:21:42.812Z"
+              "WhenOpened": "2024-04-20T17:51:31.439Z",
+              "EditorCaption": " [Tasar\u0131m]"
             }
           ]
         }
