@@ -38,14 +38,15 @@ namespace airlineOtomations
 
         private void button4_Click(object sender, EventArgs e)
         {
-            CanId.Text = "";
-            FcodeTb.Text = "";
-
+            Home home = new Home();
+            home.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            CanId.Text = "";
+            FcodeTb.Text = "";
         }
         private void deleteTicket()
         {

@@ -49,6 +49,7 @@
             this.passportTb = new System.Windows.Forms.TextBox();
             this.phoneTb = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // genderCb
@@ -189,7 +190,7 @@
             this.button2.ForeColor = System.Drawing.Color.Gainsboro;
             this.button2.Location = new System.Drawing.Point(636, 488);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 46);
+            this.button2.Size = new System.Drawing.Size(130, 46);
             this.button2.TabIndex = 41;
             this.button2.Text = "Reset";
             this.button2.UseVisualStyleBackColor = false;
@@ -201,9 +202,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Location = new System.Drawing.Point(512, 488);
+            this.button1.Location = new System.Drawing.Point(486, 488);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 46);
+            this.button1.Size = new System.Drawing.Size(130, 46);
             this.button1.TabIndex = 40;
             this.button1.Text = "Record";
             this.button1.UseVisualStyleBackColor = false;
@@ -271,7 +272,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button3.Location = new System.Drawing.Point(512, 436);
+            this.button3.Location = new System.Drawing.Point(585, 436);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(219, 46);
             this.button3.TabIndex = 54;
@@ -279,11 +280,27 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button4.ForeColor = System.Drawing.Color.Gainsboro;
+            this.button4.Location = new System.Drawing.Point(783, 488);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(130, 46);
+            this.button4.TabIndex = 55;
+            this.button4.Text = "Back Home";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // AddPassanger
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1274, 761);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.phoneTb);
             this.Controls.Add(this.passportTb);
@@ -337,5 +354,6 @@
         private System.Windows.Forms.TextBox passportTb;
         private System.Windows.Forms.TextBox phoneTb;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
