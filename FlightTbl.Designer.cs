@@ -158,9 +158,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button2.Location = new System.Drawing.Point(647, 442);
+            this.button2.Location = new System.Drawing.Point(471, 447);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 46);
+            this.button2.Size = new System.Drawing.Size(139, 46);
             this.button2.TabIndex = 18;
             this.button2.Text = "Reset";
             this.button2.UseVisualStyleBackColor = false;
@@ -173,9 +173,9 @@
             this.record.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.record.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.record.ForeColor = System.Drawing.Color.Gainsboro;
-            this.record.Location = new System.Drawing.Point(523, 442);
+            this.record.Location = new System.Drawing.Point(317, 447);
             this.record.Name = "record";
-            this.record.Size = new System.Drawing.Size(95, 46);
+            this.record.Size = new System.Drawing.Size(139, 46);
             this.record.TabIndex = 17;
             this.record.Text = "Record";
             this.record.UseVisualStyleBackColor = false;
@@ -238,9 +238,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Location = new System.Drawing.Point(766, 442);
+            this.button1.Location = new System.Drawing.Point(627, 447);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 46);
+            this.button1.Size = new System.Drawing.Size(139, 46);
             this.button1.TabIndex = 47;
             this.button1.Text = "View";
             this.button1.UseVisualStyleBackColor = false;
@@ -253,7 +253,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button3.Location = new System.Drawing.Point(881, 442);
+            this.button3.Location = new System.Drawing.Point(781, 447);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(139, 46);
             this.button3.TabIndex = 48;

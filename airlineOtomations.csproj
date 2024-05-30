@@ -205,5 +205,11 @@
   <ItemGroup>
     <None Include="Resources\ucakk.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ucakk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ucak2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

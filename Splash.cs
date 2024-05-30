@@ -16,5 +16,15 @@ namespace airlineOtomations
         {
             InitializeComponent();
         }
+   
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void Splash_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

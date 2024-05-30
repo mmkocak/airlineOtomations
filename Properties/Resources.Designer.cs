@@ -63,9 +63,29 @@ namespace airlineOtomations.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap ucak2 {
+            get {
+                object obj = ResourceManager.GetObject("ucak2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap ucakk {
             get {
                 object obj = ResourceManager.GetObject("ucakk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap ucakk1 {
+            get {
+                object obj = ResourceManager.GetObject("ucakk1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

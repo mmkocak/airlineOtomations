@@ -194,7 +194,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label12.ForeColor = System.Drawing.Color.DarkRed;
-            this.label12.Location = new System.Drawing.Point(662, 379);
+            this.label12.Location = new System.Drawing.Point(712, 377);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(113, 27);
             this.label12.TabIndex = 64;
@@ -275,6 +275,7 @@
             // 
             // TicketDGV
             // 
+            this.TicketDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.TicketDGV.BackgroundColor = System.Drawing.Color.White;
             this.TicketDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.TicketDGV.GridColor = System.Drawing.Color.Maroon;
@@ -298,8 +299,9 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(195, 46);
             this.button4.TabIndex = 78;
-            this.button4.Text = "Back";
+            this.button4.Text = "Back Home";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 

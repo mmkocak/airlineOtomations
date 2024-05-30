@@ -113,5 +113,12 @@ namespace airlineOtomations
             string pnametb = PnameTb.Text = "", fPasstb = PPassTb.Text = "", pNattb = PNatTb.Text = "", pAmttb = PAmtTb.Text = "",  tId = tid.Text = ""; 
            
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            home.Show();
+            this.Hide();
+        }
     }
 }

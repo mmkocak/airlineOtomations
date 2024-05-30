@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-          
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -40,9 +38,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            
             this.label8 = new System.Windows.Forms.Label();
+            this.UidTb = new System.Windows.Forms.TextBox();
+            this.Pasword = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -108,21 +109,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.DarkRed;
-            this.label1.Location = new System.Drawing.Point(668, 88);
+            this.label1.Location = new System.Drawing.Point(658, 72);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 37);
+            this.label1.Size = new System.Drawing.Size(238, 44);
             this.label1.TabIndex = 2;
             this.label1.Text = "Faruk Airline";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.DarkRed;
-            this.label2.Location = new System.Drawing.Point(433, 257);
+            this.label2.Location = new System.Drawing.Point(505, 392);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 23);
             this.label2.TabIndex = 3;
@@ -133,7 +133,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.DarkRed;
-            this.label3.Location = new System.Drawing.Point(433, 307);
+            this.label3.Location = new System.Drawing.Point(505, 442);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 23);
             this.label3.TabIndex = 4;
@@ -146,12 +146,13 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Location = new System.Drawing.Point(629, 495);
+            this.button1.Location = new System.Drawing.Point(603, 572);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 46);
+            this.button1.Size = new System.Drawing.Size(139, 46);
             this.button1.TabIndex = 5;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -160,13 +161,13 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button2.Location = new System.Drawing.Point(753, 495);
+            this.button2.Location = new System.Drawing.Point(798, 572);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 46);
+            this.button2.Size = new System.Drawing.Size(139, 46);
             this.button2.TabIndex = 6;
             this.button2.Text = "Reset";
             this.button2.UseVisualStyleBackColor = false;
-           
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label8
             // 
@@ -180,11 +181,37 @@
             this.label8.Text = "X";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
+            // UidTb
+            // 
+            this.UidTb.Location = new System.Drawing.Point(747, 392);
+            this.UidTb.Name = "UidTb";
+            this.UidTb.Size = new System.Drawing.Size(313, 22);
+            this.UidTb.TabIndex = 10;
+            // 
+            // Pasword
+            // 
+            this.Pasword.Location = new System.Drawing.Point(747, 445);
+            this.Pasword.Name = "Pasword";
+            this.Pasword.Size = new System.Drawing.Size(313, 22);
+            this.Pasword.TabIndex = 11;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::airlineOtomations.Properties.Resources.ucak2;
+            this.pictureBox1.Location = new System.Drawing.Point(653, 148);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(284, 193);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1274, 761);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Pasword);
+            this.Controls.Add(this.UidTb);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -196,9 +223,9 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Login_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,5 +244,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox UidTb;
+        private System.Windows.Forms.TextBox Pasword;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
