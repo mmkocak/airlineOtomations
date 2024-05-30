@@ -17,20 +17,7 @@ namespace airlineOtomations
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            // Splash screen
-            Splash splashForm = new Splash();
-            splashForm.Show();
-            Application.DoEvents();
-
-            // Pause for 3 seconds
-            Thread.Sleep(3000);
-
-            // Close splash screen
-            splashForm.Close();
-
-            // Show login form
-            
-            Application.Run(new Login());
+            Application.Run(new Splash());
         }
     }
 }
