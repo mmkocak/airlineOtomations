@@ -17,7 +17,7 @@ namespace airlineOtomations
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddPassanger());
+            Application.Run(new Splash());
         }
     }
 }
