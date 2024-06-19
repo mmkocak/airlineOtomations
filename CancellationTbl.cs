@@ -25,7 +25,7 @@ namespace airlineOtomations
         {
             FillTicketCodeCan fillTicket = new FillTicketCodeCan();
             fillTicket.filTickedCodePopulate(TidCb);
-            string connectionString = "Server=DESKTOP-I3I4IR2\\SQLEXPRESS; Database=AirlinesDb; Trusted_Connection=True;";
+            string connectionString = con;
             SelectPopulate selectPopulate = new SelectPopulate(connectionString);
             CancellDGV.DataSource = selectPopulate.GetDataTable("CancelTbl");
         }
@@ -50,27 +50,31 @@ namespace airlineOtomations
         }
         private void deleteTicket()
         {
-            SqlConnection Con = new SqlConnection(con) ;
+            SqlConnection Con = new SqlConnection(con);
             string tId = TidCb.SelectedValue.ToString();
-           
-                try
-                {
-                    Con.Open();
-                    string query = "DELETE FROM TicketTbl where TId= @tId";
-                    SqlCommand cmd = new SqlCommand(query, Con);
-                    cmd.Parameters.AddWithValue("@tId", tId);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Ticket Deleted Successfully");
-                    Con.Close();
-                string connectionString = "Server=DESKTOP-I3I4IR2\\SQLEXPRESS; Database=AirlinesDb; Trusted_Connection=True;";
+
+            try
+            {
+                Con.Open();
+                string query = "DELETE FROM TicketTbl where TId = @tId";
+                SqlCommand cmd = new SqlCommand(query, Con);
+                cmd.Parameters.AddWithValue("@tId", tId);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Ticket Deleted Successfully");
+                Con.Close();
+
+                FillTicketCodeCan fillTicket = new FillTicketCodeCan();
+                fillTicket.filTickedCodePopulate(TidCb);
+
+                string connectionString = con;
                 SelectPopulate selectPopulate = new SelectPopulate(connectionString);
                 CancellDGV.DataSource = selectPopulate.GetDataTable("CancelTbl");
             }
-                catch (Exception Ex)
-                {
-                    MessageBox.Show(Ex.Message);
-                }
-            
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -83,43 +87,63 @@ namespace airlineOtomations
             {
                 MessageBox.Show("Missing Information");
             }
-            else
-            {
-                try
+            
+                else
                 {
-                    using (SqlConnection conn = new SqlConnection(con))
+                    try
                     {
-                        conn.Open();
-                        string query = "INSERT INTO CancelTbl (CancId, TicId, FlCode, CancDate)" +
-                                       " VALUES(@canId, @tidCb, @Fcode, @cancDate)";
-                        SqlCommand cmd = new SqlCommand(query, conn);
-                        cmd.Parameters.AddWithValue("@canId", canId);
-                        cmd.Parameters.AddWithValue("@tidCb", tidCb);
-                        cmd.Parameters.AddWithValue("@Fcode", Fcode);
-                        cmd.Parameters.AddWithValue("@cancDate", cancDate);
-                        cmd.ExecuteNonQuery();
-                        MessageBox.Show("Successful");
+                        using (SqlConnection conn = new SqlConnection(con))
+                        {
+                            conn.Open();
 
+                            // Biletin daha önce iptal edilip edilmediğini kontrol et
+                            string checkQuery = "SELECT COUNT(*) FROM CancelTbl WHERE CancId = @canId";
+                            SqlCommand checkCmd = new SqlCommand(checkQuery, conn);
+                            checkCmd.Parameters.AddWithValue("@canId", canId);
+                            int count = (int)checkCmd.ExecuteScalar();
 
-                        conn.Close();
-                        
-                        string connectionString = "Server=DESKTOP-I3I4IR2\\SQLEXPRESS; Database=AirlinesDb; Trusted_Connection=True;";
-                        SelectPopulate selectPopulate = new SelectPopulate(connectionString);
-                        CancellDGV.DataSource = selectPopulate.GetDataTable("CancelTbl");
+                            if (count > 0)
+                            {
+                                MessageBox.Show("This cancellation ID has already been used.");
+                                return;
+                            }
 
-                      deleteTicket();
+                            string query = "INSERT INTO CancelTbl (CancId, TicId, FlCode, CancDate)" +
+                                           " VALUES(@canId, @tidCb, @Fcode, @cancDate)";
+                            SqlCommand cmd = new SqlCommand(query, conn);
+                            cmd.Parameters.AddWithValue("@canId", canId);
+                            cmd.Parameters.AddWithValue("@tidCb", tidCb);
+                            cmd.Parameters.AddWithValue("@Fcode", Fcode);
+                            cmd.Parameters.AddWithValue("@cancDate", cancDate);
+                            cmd.ExecuteNonQuery();
+                            MessageBox.Show("Successful");
+
+                            conn.Close();
+
+                            string connectionString = con;
+                            SelectPopulate selectPopulate = new SelectPopulate(connectionString);
+                            CancellDGV.DataSource = selectPopulate.GetDataTable("CancelTbl");
+
+                            deleteTicket();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
                     }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
             }
-        }
+        
+        
 
         private void CancellDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
