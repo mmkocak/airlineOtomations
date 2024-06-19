@@ -198,9 +198,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::airlineOtomations.Properties.Resources.ucak2;
-            this.pictureBox1.Location = new System.Drawing.Point(653, 148);
+            this.pictureBox1.Location = new System.Drawing.Point(564, 148);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(284, 193);
+            this.pictureBox1.Size = new System.Drawing.Size(373, 227);
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 

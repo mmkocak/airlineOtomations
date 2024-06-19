@@ -63,6 +63,7 @@
             this.genderCb.Name = "genderCb";
             this.genderCb.Size = new System.Drawing.Size(272, 31);
             this.genderCb.TabIndex = 31;
+            this.genderCb.SelectedIndexChanged += new System.EventHandler(this.genderCb_SelectedIndexChanged);
             // 
             // nationalityCb
             // 
@@ -194,6 +195,7 @@
             this.button2.TabIndex = 41;
             this.button2.Text = "Reset";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 

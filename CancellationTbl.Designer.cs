@@ -205,6 +205,7 @@
             this.CancellDGV.RowTemplate.Height = 24;
             this.CancellDGV.Size = new System.Drawing.Size(1409, 319);
             this.CancellDGV.TabIndex = 100;
+            this.CancellDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CancellDGV_CellContentClick);
             // 
             // panel3
             // 

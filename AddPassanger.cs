@@ -90,5 +90,20 @@ namespace airlineOtomations
             home.Show();
             this.Hide();
         }
+
+        private void genderCb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+             passId.Text = "";
+             passName.Text="" ;
+             passportTb.Text = "";
+             passAd.Text = "";
+            phoneTb.Text = "";
+        
+        }
     }
 }

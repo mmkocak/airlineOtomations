@@ -56,7 +56,7 @@ namespace airlineOtomations
                 try
                 {
                     Con.Open();
-                    string query = "DELETE FROM FlightsTbl where TId= @tId";
+                    string query = "DELETE FROM TicketTbl where TId= @tId";
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.Parameters.AddWithValue("@tId", tId);
                     cmd.ExecuteNonQuery();
@@ -115,6 +115,11 @@ namespace airlineOtomations
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void CancellDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
