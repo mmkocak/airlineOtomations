@@ -45,7 +45,6 @@ namespace airlineOtomations
 
         private void button3_Click(object sender, EventArgs e)
         {
-            CanId.Text = "";
             FcodeTb.Text = "";
         }
         private void deleteTicket()
@@ -78,68 +77,62 @@ namespace airlineOtomations
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            string canId = CanId.Text;
             string Fcode = FcodeTb.Text;
             string tidCb = TidCb.SelectedValue.ToString();
-            string cancDate = CancDate.Value.Date.ToString();
+            DateTime cancDate = CancDate.Value.Date;
 
-            if (canId == "" || Fcode == "")
+            if (tidCb == "" || Fcode == "")
             {
                 MessageBox.Show("Missing Information");
             }
-            
-                else
+            else
+            {
+                try
                 {
-                    try
+                    using (SqlConnection conn = new SqlConnection(con))
                     {
-                        using (SqlConnection conn = new SqlConnection(con))
+                        conn.Open();
+
+                        // Biletin daha önce iptal edilip edilmediğini kontrol et
+                        string checkQuery = "SELECT COUNT(*) FROM CancelTbl WHERE TicId = @tidCb";
+                        SqlCommand checkCmd = new SqlCommand(checkQuery, conn);
+                        checkCmd.Parameters.AddWithValue("@tidCb", tidCb);
+                        int count = (int)checkCmd.ExecuteScalar();
+
+                        if (count > 0)
                         {
-                            conn.Open();
-
-                            // Biletin daha önce iptal edilip edilmediğini kontrol et
-                            string checkQuery = "SELECT COUNT(*) FROM CancelTbl WHERE CancId = @canId";
-                            SqlCommand checkCmd = new SqlCommand(checkQuery, conn);
-                            checkCmd.Parameters.AddWithValue("@canId", canId);
-                            int count = (int)checkCmd.ExecuteScalar();
-
-                            if (count > 0)
-                            {
-                                MessageBox.Show("This cancellation ID has already been used.");
-                                return;
-                            }
-
-                            string query = "INSERT INTO CancelTbl (CancId, TicId, FlCode, CancDate)" +
-                                           " VALUES(@canId, @tidCb, @Fcode, @cancDate)";
-                            SqlCommand cmd = new SqlCommand(query, conn);
-                            cmd.Parameters.AddWithValue("@canId", canId);
-                            cmd.Parameters.AddWithValue("@tidCb", tidCb);
-                            cmd.Parameters.AddWithValue("@Fcode", Fcode);
-                            cmd.Parameters.AddWithValue("@cancDate", cancDate);
-                            cmd.ExecuteNonQuery();
-                            MessageBox.Show("Successful");
-
-                            conn.Close();
-
-                            string connectionString = con;
-                            SelectPopulate selectPopulate = new SelectPopulate(connectionString);
-                            CancellDGV.DataSource = selectPopulate.GetDataTable("CancelTbl");
-
-                            deleteTicket();
+                            MessageBox.Show("This ticket has already been canceled.");
+                            return;
                         }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
+
+                        string query = "INSERT INTO CancelTbl (TicId, FlCode, CancDate)" +
+                                       " VALUES(@tidCb, @Fcode, @cancDate)";
+                        SqlCommand cmd = new SqlCommand(query, conn);
+                        cmd.Parameters.AddWithValue("@tidCb", tidCb);
+                        cmd.Parameters.AddWithValue("@Fcode", Fcode);
+                        cmd.Parameters.AddWithValue("@cancDate", cancDate);
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Ticket Canceled Successfully");
+
+                        conn.Close();
+
+                        string connectionString = con;
+                        SelectPopulate selectPopulate = new SelectPopulate(connectionString);
+                        CancellDGV.DataSource = selectPopulate.GetDataTable("CancelTbl");
+
+                        deleteTicket();
                     }
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
-        
-        
-
-        private void CancellDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
+        
+        
+
+       
 
         private void label7_Click(object sender, EventArgs e)
         {

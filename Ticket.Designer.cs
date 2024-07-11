@@ -37,14 +37,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.PICb = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tid = new System.Windows.Forms.TextBox();
             this.PnameTb = new System.Windows.Forms.TextBox();
             this.PNatTb = new System.Windows.Forms.TextBox();
             this.PAmtTb = new System.Windows.Forms.TextBox();
@@ -121,7 +119,6 @@
             this.FCode.Name = "FCode";
             this.FCode.Size = new System.Drawing.Size(272, 31);
             this.FCode.TabIndex = 53;
-            this.FCode.SelectedIndexChanged += new System.EventHandler(this.FCode_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -139,7 +136,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(93, 281);
+            this.label5.Location = new System.Drawing.Point(91, 213);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(115, 23);
             this.label5.TabIndex = 50;
@@ -150,28 +147,17 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(93, 212);
+            this.label4.Location = new System.Drawing.Point(91, 144);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 23);
             this.label4.TabIndex = 48;
             this.label4.Text = "Name";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(93, 158);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 23);
-            this.label3.TabIndex = 46;
-            this.label3.Text = "Ticket Id";
-            // 
             // PICb
             // 
             this.PICb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.PICb.FormattingEnabled = true;
-            this.PICb.Location = new System.Drawing.Point(647, 332);
+            this.PICb.Location = new System.Drawing.Point(289, 268);
             this.PICb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PICb.Name = "PICb";
             this.PICb.Size = new System.Drawing.Size(272, 31);
@@ -183,7 +169,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label11.ForeColor = System.Drawing.Color.DimGray;
-            this.label11.Location = new System.Drawing.Point(451, 340);
+            this.label11.Location = new System.Drawing.Point(93, 276);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(134, 23);
             this.label11.TabIndex = 62;
@@ -227,18 +213,10 @@
             this.panel1.Size = new System.Drawing.Size(69, 352);
             this.panel1.TabIndex = 66;
             // 
-            // tid
-            // 
-            this.tid.Location = new System.Drawing.Point(291, 158);
-            this.tid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tid.Name = "tid";
-            this.tid.Size = new System.Drawing.Size(272, 22);
-            this.tid.TabIndex = 69;
-            // 
             // PnameTb
             // 
             this.PnameTb.Enabled = false;
-            this.PnameTb.Location = new System.Drawing.Point(291, 215);
+            this.PnameTb.Location = new System.Drawing.Point(289, 147);
             this.PnameTb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PnameTb.Name = "PnameTb";
             this.PnameTb.Size = new System.Drawing.Size(272, 22);
@@ -248,7 +226,7 @@
             // PNatTb
             // 
             this.PNatTb.Enabled = false;
-            this.PNatTb.Location = new System.Drawing.Point(291, 283);
+            this.PNatTb.Location = new System.Drawing.Point(289, 215);
             this.PNatTb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PNatTb.Name = "PNatTb";
             this.PNatTb.Size = new System.Drawing.Size(272, 22);
@@ -348,7 +326,6 @@
             this.Controls.Add(this.PAmtTb);
             this.Controls.Add(this.PNatTb);
             this.Controls.Add(this.PnameTb);
-            this.Controls.Add(this.tid);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -361,7 +338,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -388,14 +364,12 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox PICb;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox tid;
         private System.Windows.Forms.TextBox PnameTb;
         private System.Windows.Forms.TextBox PNatTb;
         private System.Windows.Forms.TextBox PAmtTb;

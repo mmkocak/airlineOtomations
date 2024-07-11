@@ -31,12 +31,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.TidCb = new System.Windows.Forms.ComboBox();
-            this.CanId = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -55,7 +53,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label9.ForeColor = System.Drawing.Color.DimGray;
-            this.label9.Location = new System.Drawing.Point(712, 207);
+            this.label9.Location = new System.Drawing.Point(486, 229);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(56, 23);
             this.label9.TabIndex = 82;
@@ -77,22 +75,11 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(92, 207);
+            this.label4.Location = new System.Drawing.Point(91, 148);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(122, 23);
             this.label4.TabIndex = 74;
             this.label4.Text = "Flight Code";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(92, 153);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 23);
-            this.label3.TabIndex = 72;
-            this.label3.Text = "Cancell Id";
             // 
             // label7
             // 
@@ -137,13 +124,6 @@
             this.TidCb.Size = new System.Drawing.Size(272, 31);
             this.TidCb.TabIndex = 93;
             this.TidCb.SelectionChangeCommitted += new System.EventHandler(this.TidCb_SelectionChangeCommitted);
-            // 
-            // CanId
-            // 
-            this.CanId.Location = new System.Drawing.Point(289, 153);
-            this.CanId.Name = "CanId";
-            this.CanId.Size = new System.Drawing.Size(272, 22);
-            this.CanId.TabIndex = 95;
             // 
             // button4
             // 
@@ -206,7 +186,6 @@
             this.CancellDGV.RowTemplate.Height = 24;
             this.CancellDGV.Size = new System.Drawing.Size(1409, 319);
             this.CancellDGV.TabIndex = 100;
-            this.CancellDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CancellDGV_CellContentClick);
             // 
             // panel3
             // 
@@ -249,7 +228,7 @@
             // FcodeTb
             // 
             this.FcodeTb.Enabled = false;
-            this.FcodeTb.Location = new System.Drawing.Point(289, 210);
+            this.FcodeTb.Location = new System.Drawing.Point(288, 151);
             this.FcodeTb.Name = "FcodeTb";
             this.FcodeTb.Size = new System.Drawing.Size(272, 22);
             this.FcodeTb.TabIndex = 105;
@@ -257,7 +236,7 @@
             // 
             // CancDate
             // 
-            this.CancDate.Location = new System.Drawing.Point(909, 191);
+            this.CancDate.Location = new System.Drawing.Point(677, 229);
             this.CancDate.Name = "CancDate";
             this.CancDate.Size = new System.Drawing.Size(272, 22);
             this.CancDate.TabIndex = 106;
@@ -277,12 +256,10 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.CanId);
             this.Controls.Add(this.TidCb);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -302,13 +279,10 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label4;
-        
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox TidCb;
-        private System.Windows.Forms.TextBox CanId;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;

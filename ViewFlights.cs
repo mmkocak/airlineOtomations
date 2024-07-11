@@ -54,23 +54,12 @@ namespace airlineOtomations
             SeatNum.Text = "";
         }
 
-        private void flightDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0) // Geçerli bir satır seçildiğinden emin olun
-            {
-                DataGridViewRow row = flightDGV.Rows[e.RowIndex];
-                Fcode.Text = row.Cells["Fcode"].Value.ToString();
-                Fsrc.SelectedItem = row.Cells["Fsrc"].Value.ToString();
-                FDest.SelectedItem = row.Cells["FDest"].Value.ToString();
-                SeatNum.Text = row.Cells["FCap"].Value.ToString();
-               
-            }
-        }
+   
 
         private void button3_Click(object sender, EventArgs e)
         {
             string fcodeTb = Fcode.Text;
-            if (fcodeTb == "")
+            if (string.IsNullOrEmpty(fcodeTb))
             {
                 MessageBox.Show("Enter The Flight to delete");
             }
@@ -98,30 +87,26 @@ namespace airlineOtomations
         {
             string fcode = Fcode.Text;
             string fcap = SeatNum.Text;
-            string fsrc = Fsrc.SelectedItem.ToString();
-            string fdest = FDest.SelectedItem.ToString();
-            string fdate = FDate.Value.Date.ToString();
-            
+            string fsrc = Fsrc.SelectedItem != null ? Fsrc.SelectedItem.ToString() : "";
+            string fdest = FDest.SelectedItem != null ? FDest.SelectedItem.ToString() : "";
+            string fdate = FDate.Value.Date.ToString("yyyy-MM-dd");
 
-
-            if (fcode == "" || fcap == "")
+            if (string.IsNullOrEmpty(fcode) || string.IsNullOrEmpty(fcap))
             {
-                MessageBox.Show("Missing İnformation");
+                MessageBox.Show("Missing Information");
             }
             else
             {
                 try
                 {
                     Con.Open();
-string query = "UPDATE FlightsTbl set Fsrc = @fsrc, FDest = @fdest, FDate = @fdate, FCap = @fCap WHERE FCode = @fcode";
+                    string query = "UPDATE FlightsTbl set Fsrc = @fsrc, FDest = @fdest, FDate = @fdate, FCap = @fCap WHERE FCode = @fcode";
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.Parameters.AddWithValue("@fsrc", fsrc);
                     cmd.Parameters.AddWithValue("@fdest", fdest);
                     cmd.Parameters.AddWithValue("@fdate", fdate);
                     cmd.Parameters.AddWithValue("@fCap", fcap);
-
                     cmd.Parameters.AddWithValue("@fcode", fcode);
-                   
 
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Flight Updated Successfully");
@@ -132,15 +117,23 @@ string query = "UPDATE FlightsTbl set Fsrc = @fsrc, FDest = @fdest, FDate = @fda
                 {
                     MessageBox.Show(Ex.Message);
                 }
-
             }
-        
-    
-}
 
-        private void Fsrc_SelectedIndexChanged(object sender, EventArgs e)
+        }
+
+       
+
+        private void flightDGV_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = flightDGV.Rows[e.RowIndex];
 
+                Fcode.Text = row.Cells["Fcode"].Value.ToString();
+                Fsrc.SelectedItem = row.Cells["Fsrc"].Value != null ? row.Cells["Fsrc"].Value.ToString() : null;
+                FDest.SelectedItem = row.Cells["FDest"].Value != null ? row.Cells["FDest"].Value.ToString() : null;
+                SeatNum.Text = row.Cells["FCap"].Value.ToString();
+            }
         }
     }
 }

@@ -54,15 +54,14 @@ namespace airlineOtomations
         private void button1_Click(object sender, EventArgs e)
         {
 
-            string tId = tid.Text;
             string pnametb = PnameTb.Text;
-            string Fcode = FCode.SelectedValue.ToString(); 
-            string pIcb = PICb.SelectedValue.ToString(); 
+            string Fcode = FCode.SelectedValue != null ? FCode.SelectedValue.ToString() : "";
+            string pIcb = PICb.SelectedValue != null ? PICb.SelectedValue.ToString() : "";
             string fPasstb = PPassTb.Text;
             string pNattb = PNatTb.Text;
             string pAmttb = PAmtTb.Text;
 
-            if (pnametb == "" || tId == "")
+            if (pnametb == "")
             {
                 MessageBox.Show("Missing Information");
             }
@@ -73,10 +72,9 @@ namespace airlineOtomations
                     using (SqlConnection conn = new SqlConnection(con))
                     {
                         conn.Open();
-                        string query = "INSERT INTO TicketTbl (TId, Fcode, PId, PName, PPass, PNation, Amt)" +
-                                       " VALUES(@tId, @Fcode, @pIcb, @pnametb, @fPasstb, @pNattb, @pAmttb)";
+                        string query = "INSERT INTO TicketTbl (Fcode, PId, PName, PPass, PNation, Amt)" +
+                                       " VALUES(@Fcode, @pIcb, @pnametb, @fPasstb, @pNattb, @pAmttb)";
                         SqlCommand cmd = new SqlCommand(query, conn);
-                        cmd.Parameters.AddWithValue("@tId", tId);
                         cmd.Parameters.AddWithValue("@Fcode", Fcode);
                         cmd.Parameters.AddWithValue("@pIcb", pIcb);
                         cmd.Parameters.AddWithValue("@pnametb", pnametb);
@@ -84,13 +82,11 @@ namespace airlineOtomations
                         cmd.Parameters.AddWithValue("@pNattb", pNattb);
                         cmd.Parameters.AddWithValue("@pAmttb", pAmttb);
                         cmd.ExecuteNonQuery();
-                        MessageBox.Show("Ticket Booked Successful");
-
+                        MessageBox.Show("Ticket Booked Successfully");
 
                         conn.Close();
 
-                        string connectionString = "Server=DESKTOP-I3I4IR2\\SQLEXPRESS; Database=AirlinesDb; Trusted_Connection=True;";
-                        SelectPopulate selectPopulate = new SelectPopulate(connectionString);
+                        SelectPopulate selectPopulate = new SelectPopulate(con);
                         TicketDGV.DataSource = selectPopulate.GetDataTable("TicketTbl");
                     }
                 }
@@ -100,18 +96,18 @@ namespace airlineOtomations
                 }
             }
 
-
         }
 
-        private void FCode_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+   
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string pnametb = PnameTb.Text = "", fPasstb = PPassTb.Text = "", pNattb = PNatTb.Text = "", pAmttb = PAmtTb.Text = "",  tId = tid.Text = ""; 
-           
+            PnameTb.Text = "";
+            PPassTb.Text = "";
+            PNatTb.Text = "";
+            PAmtTb.Text = "";
+          
+
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -120,5 +116,7 @@ namespace airlineOtomations
             home.Show();
             this.Hide();
         }
+
+       
     }
 }

@@ -128,7 +128,6 @@
             this.Fsrc.Name = "Fsrc";
             this.Fsrc.Size = new System.Drawing.Size(272, 31);
             this.Fsrc.TabIndex = 28;
-            this.Fsrc.SelectedIndexChanged += new System.EventHandler(this.Fsrc_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -280,7 +279,7 @@
             this.flightDGV.RowTemplate.Height = 24;
             this.flightDGV.Size = new System.Drawing.Size(1135, 305);
             this.flightDGV.TabIndex = 61;
-            this.flightDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.flightDGV_CellContentClick);
+            this.flightDGV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.flightDGV_CellClick);
             // 
             // Fcode
             // 

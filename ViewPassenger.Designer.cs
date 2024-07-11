@@ -281,6 +281,7 @@
             this.passengerDGV.RowTemplate.Height = 24;
             this.passengerDGV.Size = new System.Drawing.Size(1135, 305);
             this.passengerDGV.TabIndex = 60;
+            this.passengerDGV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.passengerDGV_CellClick);
             this.passengerDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.passengerDGV_RowHeaderMouseClick);
             // 
             // PidTb
